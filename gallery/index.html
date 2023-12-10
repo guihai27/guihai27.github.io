@@ -276,16 +276,25 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(5)">
+                <a href="/friends" class="drawer-menu-item-link">
+                  
+                  <span class="name">friends</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(6)">
                   <span>
                     
                       <i class="fas fa-link"></i>
                     
                     <span class="name">更多</span>
                   </span>
-                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(5)}" aria-hidden="true"></i>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(6)}" aria-hidden="true"></i>
                 </a>
-                <ul class="drawer-sub-menu" v-if="isOpen(5)">
+                <ul class="drawer-sub-menu" v-if="isOpen(6)">
                   
                   <li>
                     <a href="/gallery">
@@ -417,6 +426,15 @@
                 <a href="/Curriculum-Vitae" class="menu-item-link" title="Curriculum-Vitae">
                   
                   <span class="name">Curriculum-Vitae</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/friends" class="menu-item-link" title="friends">
+                  
+                  <span class="name">friends</span>
                 </a>
               
             </li>
@@ -916,7 +934,7 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sun Dec 10 2023 16:52:36 GMT+0800 (中国标准时间)</div>
+            <div id="last-update" style="display: none;">Sun Dec 10 2023 16:57:23 GMT+0800 (中国标准时间)</div>
             <div id="last-update-show">2023-12-10 日</div>
           
         </div>
