@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>Tag: Hello World | 归海</title>
+  <title>Hexo重装与迁移 | 归海</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -578,104 +578,515 @@
 </header>
         <!-- 内容区域 -->
         
+ <!-- prismjs 代码高亮 -->
+ 
 
-<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
-<div class="bg-light-floor-tagDetail" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -3;"></div>
 
-<div class="tag-header" style="background-image: url('https://pic1.zhimg.com/80/v2-604a15cef201cf177943af2d915eb2e7_1440w.jpg?source=1940ef5c');">
-  <div class="tag-header-title">
-    tag
-  </div>
-  <div class="tag-header-desc">
+<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;"></div>
+
+
+  <!-- 文章详情页顶部图片和标题 -->
+
+
+
+
+<div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
+  background-position: center center;position: relative;background-image:url('https://pica.zhimg.com/80/v2-573ac3e25de03fad9c32add5a05e5cfc_1440w.webp')">
+  <div class="post-detail-header-mask"></div>
+  <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
-    <span class="title" id="tag-header-desc"></span>
-    <script>
-  function typedFn() {
-    const el = '#tag-header-desc';
-    const type = 'tagDetail';
-    let desc = '愿你如风，被人温柔以待'
-    var typed = new Typed(el, {
-      strings: [desc],
-      startDelay: 100,
-      typeSpeed: 100,
-      loop: true,
-      backSpeed: 50,
-      showCursor: true
-    });
-  }
-  typedFn();
-</script>
+  <div class="post-detail-header_info-box">
+    <div class="title-box">
+      <span class="title">
+        Hexo重装与迁移
+      </span>
+    </div>
     
-  </div>
-  <div class="mask-box"></div>
-</div>
-
-
-
-<div class="tag">
-  <div class="tag-name">
-    <div class="name" style="background-color: #A3E4D7;">Hello World category</div>
-  </div>
-  <!-- 每一篇文章卡片 -->
-  <!-- hash算法 -->
-
-<section class="posts">
-  
     
-    <article class="post reveal" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2023-12-09</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2023/12/09/hello-world/">Hello World</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
+      
+        <span class="post-detail-header_date">
+          <i class="fas fa-calendar"></i> Published in：2023-12-10 |
+        </span>
+      
 
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hello-World/" rel="tag">Hello World</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2023/12/09/hello-world/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="https://pic3.zhimg.com/80/v2-5f7cb7e900b9dcf5354c3d4d2c5cc3c2_1440w.webp" class="lazyload placeholder" data-srcset="https://pic3.zhimg.com/80/v2-5f7cb7e900b9dcf5354c3d4d2c5cc3c2_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+      
+        <span class="post-detail-header_categories">
+          <i class="iconfont iconbookmark1"></i> category：
+          
+            <a href="/categories/Hexo%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3/" class="post-detail-header_category">
+              Hexo配置相关
             </a>
-          </div>
-          <div class="post-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2023/12/09/hello-world/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2023/12/09/hello-world/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="https://pic3.zhimg.com/80/v2-5f7cb7e900b9dcf5354c3d4d2c5cc3c2_1440w.webp" class="lazyload placeholder" data-srcset="https://pic3.zhimg.com/80/v2-5f7cb7e900b9dcf5354c3d4d2c5cc3c2_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-        </a>
-      </div>
-    </article>
+          
+        </span>
+      
+
+      
+    
+  </div>
   
-</section>
+  
+    <script src="/js/bubble/bubble.js"></script>
+  
 </div>
 
-<div class="w-70">
+
+
+
+
+<div class="post-detail-content post-row" 
+  style="padding-top: 0px;">
+  <div class="main-content">
+    <article class="post post-detail">
+      <div class="post-content">
+        <h1 id="重装和迁移"><a href="#重装和迁移" class="headerlink" title="重装和迁移"></a>重装和迁移</h1><h2 id="重装"><a href="#重装" class="headerlink" title="重装"></a>重装</h2><p>这个概念跟网上说的，如何在另外一台电脑写博客是一个意思，没有很多繁琐的操作，<strong>只需要把 <code>source</code>、<code>themes</code> 、 <code>_config.yml</code> 覆盖到 <code>blog</code> 的那个文件夹即可</strong> ，只要<code>hexo</code>环境没问题，<code>hexo</code>的一系列操作都没问题（在第一次<code>hexo d</code>可能会有些慢，耐心等待）。<br> 　同样，在新电脑上只要把环境搭建好，只要把两个文件夹一个配置文件覆盖过去，都没问题。<br> 　包括在备份时也只需要把这两个文件夹一个配置文件备份好，其他的都不用管了。</p>
+<h3 id="基础环境搭建"><a href="#基础环境搭建" class="headerlink" title="基础环境搭建"></a>基础环境搭建</h3><h3 id="安装node-js-git"><a href="#安装node-js-git" class="headerlink" title="安装node.js &amp;&amp; git"></a>安装node.js &amp;&amp; git</h3><div class="link-group"><div class="tagLink"><a class="link-card" title="node下载" target="_blank" rel="noopener" href="https://nodejs.org/"><span class="link-card-backdrop" style="background-image: url(/imgs/1210/nodejs.png)"></span><div class="left"><img src="/imgs/1210/nodejs.png" class="lazyload placeholder" data-srcset="/imgs/1210/nodejs.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"/></div><div class="right"><p class="text">node下载</p><p class="url">https://nodejs.org/</p></div></a></div> <div class="tagLink"><a class="link-card" title="git下载" target="_blank" rel="noopener" href="https://git-scm.com"><span class="link-card-backdrop" style="background-image: url(/imgs/1210/git.png)"></span><div class="left"><img src="/imgs/1210/git.png" class="lazyload placeholder" data-srcset="/imgs/1210/git.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"/></div><div class="right"><p class="text">git下载</p><p class="url">https://git-scm.com</p></div></a></div></div>
+
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">或者</span><br><span class="line">cnpm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"># 输入hexo -v查看版本</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>初始化hexo</li>
+</ul>
+<p>执行<code>hexo init</code>（这里用<code>blog</code>文件夹做说明 <code>hexo init &lt;blog&gt;</code> 或者新建一个<code>blog</code>的文件夹然后执行 <code>hexo init</code>），这一步文件夹内会生成一些基本的文件，这些都是<code>hexo</code>自动部署的，跟<code>git init</code> 同一个道理。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init myblog</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>然后 执行 <code>npm install hexo-deployer-git --save</code> 安装<code>hexo</code>提供的快速方便的一键部署功能，然后改 <code>_config.yml</code> 中最下面的配置文件：</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:guihai27/guihai27.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>启动服务站点</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>至此，全部安装工作已经完成。</p>
+<p>访问<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 至此hero就搭建好了。可以在本地访问了。<br><img src="/imgs/1210/hexo_s.png" class="lazyload placeholder" data-srcset="/imgs/1210/hexo_s.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<h3 id="ssh生成"><a href="#ssh生成" class="headerlink" title="ssh生成"></a>ssh生成</h3><p>若本机中已经有<code>ssh</code>，直接添加到<code>github</code>的<code>ssh</code>里面即可，本地没有话，先生成  <code>ssh-keygen -t rsa -C &quot;qq-email@qq.com&quot;</code> （执行期间会让选择放置ssh的目录和ssh密码），用文本编辑器打开ssh.pub文件，拷贝其中的内容，将其添加到 <code>github</code>的 <code>Add SSH Key</code>，添加完成后用 <code>ssh -T git@github.com</code>若提示 <code>Hi *****! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code>，这就说明与<code>github</code>连接成功了。</p>
+<h2 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h2><p>至于说迁移，只要本机的<code>hexo</code>环境没问题，把<code>blog</code>文件夹随便放哪都可以。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ol>
+<li>换系统或者换电脑需要重装 <code>hexo</code> 的时候，只需要在<code>hexo</code>环境搭建好的基础上，只需要把 <code>source</code>、<code>themes</code> 、 <code>_config.yml</code> 覆盖到新的博客目录下即可。</li>
+<li>只要本机的<code>hexo</code>环境没问题，把<code>blog</code>文件夹随便放哪都可以。</li>
+<li>应该是<code>hexo</code>版本更新了的缘故，<code>hexo d</code>时只能在<code>git bash</code>中执行，其他（window环境）命令行模式都是提示无法获取远程仓库或者没有权限。</li>
+</ol>
+
+      </div>
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          
+            <a href="/tags/Hexo/" class="">
+              Hexo
+            </a>
+          
+        </div>
+        
+      </div>
+      
+        <div class="copyright">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+    <strong>author:  </strong>归海越绝</a>
+    </li>
+    <li class="post-copyright-link">
+    <strong>link:  </strong>
+    <a href="/2023/12/10/Hexo迁移/" target="_blank" title="Hexo重装与迁移">https://guihai27.github.io/2023/12/10/Hexo迁移/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>Copyright notice:   </strong>
+      All articles on this website, unless otherwise stated, adopt <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      reprint policy. If reproduced, please indicate source!
+    </li>
+  </ul>
+<div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      <!-- 文章详情页的上一页和下一页 -->
+<div class="post-nav">
+
+
+
+
+
   
+  <div class="post-nav-next post-nav-item">
+    <div class="post-nav-img" style="background-size: cover; 
+      background-position: center center;">
+      <img class="lazyload lazyload placeholder" src="https://pica.zhimg.com/80/v2-61f99f8dcf899f54cad2a1aa28b21e44_1440w.webp" class="lazyload placeholder" data-srcset="https://pica.zhimg.com/80/v2-61f99f8dcf899f54cad2a1aa28b21e44_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+    </div>
+    <a href="/2023/12/09/my-new/" class="post-nav-link">
+      <div class="title">
+        Next: <i class="fas fa-angle-right"></i>
+        <div class="title-text">My_first_blog</div>
+      </div>
+      <!-- <div class="content">
+        我的第一篇博客
+
+记录 2023.12.09
+
+      </div> -->
+    </a>
+  </div>
+
 </div>
+
+    
+    
+
+    <!-- 打赏 -->
+    
+
+    <!-- 分享 -->
+    
+      <!-- https://github.com/overtrue/share.js -->
+<!-- 文章详情页的分享 -->
+<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+
+<script src="/js/shareJs/social-share.min.js"></script>
+</script>
+
+<style>
+  .social-share {
+    margin: 20px 0;
+  }
+</style>
+
+
+    
+    
+    <!-- 评论 -->
+    <!-- 评论 -->
+
+  <div id="myComment">
+    
+      <div id="gitment-container"></div>
+
+    
+  </div>
+
+<!-- comment script in themes\hexo-theme-bamboo\layout\_partial\scripts\index.ejs -->
+
+
+  </div>
+
+  <!-- 目录 -->
+  <aside id='l_side'>
+  
+    
+      <section class="widget side_blogger">
+  <div class='content'>
+    
+    
+      <div class='text'>
+        
+          <h2>归海越绝</h2>
+        
+        
+          <p>今日もがんばってね</p>
+
+        
+        
+          <p><span id="jinrishici-sentence">归海</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="mailto:13066673277@163.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://guihai27.github.io/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="tencent://AddContact/?fromId=50&amp;fromSubId=1&amp;subcmd=all&amp;uin=531888023"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+    
+  
+  
+  
+
+  <div class="layout_sticky">    
+    
+      
+<section class="widget side_toc">
+  
+  <header>
+    
+      <i style="color: " class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name' style="color: ">本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="toc-main">
+      <div class="toc-content">
+        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%87%8D%E8%A3%85%E5%92%8C%E8%BF%81%E7%A7%BB"><span class="toc-text">重装和迁移</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E8%A3%85"><span class="toc-text">重装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">基础环境搭建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85node-js-git"><span class="toc-text">安装node.js &amp;&amp; git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85hexo"><span class="toc-text">安装hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ssh%E7%94%9F%E6%88%90"><span class="toc-text">ssh生成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%81%E7%A7%BB"><span class="toc-text">迁移</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol> -->
+        <div class="toc"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 手机端目录按钮 -->
+<div id="toc-mobile-btn">
+  <i class="fas fa-list-ul" aria-hidden="true"></i>
+</div>
+
+      
+  <section class="widget side_recent_post">
+    
+  <header>
+    
+      <a style="color: " href='/tags/'><i class="fas fa-book fa-fw" aria-hidden="true"></i><span class='name'>最新文章</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      
+      <!-- hash算法 -->
+      
+      <div class="aside-list">
+        
+          <div class="aside-list-item">
+            
+            
+            
+
+            <div class="post-img-box">
+              <a href="/2023/12/10/Hexo%E8%BF%81%E7%A7%BB/" class="post-img " style="background-size: cover; 
+                background-position: center center;">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pica.zhimg.com/80/v2-573ac3e25de03fad9c32add5a05e5cfc_1440w.webp" class="lazyload placeholder" data-srcset="https://pica.zhimg.com/80/v2-573ac3e25de03fad9c32add5a05e5cfc_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+              </a>
+            </div>
+            <div class="post-date-title">
+              <div>
+                
+                  <span class="post-date">12-10</span>
+                
+              </div>
+              <a class="post-title" href="/2023/12/10/Hexo%E8%BF%81%E7%A7%BB/">Hexo重装与迁移</a>
+            </div>
+          </div>
+        
+          <div class="aside-list-item">
+            
+            
+            
+
+            <div class="post-img-box">
+              <a href="/2023/12/09/my-new/" class="post-img " style="background-size: cover; 
+                background-position: center center;">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pica.zhimg.com/80/v2-61f99f8dcf899f54cad2a1aa28b21e44_1440w.webp" class="lazyload placeholder" data-srcset="https://pica.zhimg.com/80/v2-61f99f8dcf899f54cad2a1aa28b21e44_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+              </a>
+            </div>
+            <div class="post-date-title">
+              <div>
+                
+                  <span class="post-date">12-09</span>
+                
+              </div>
+              <a class="post-title" href="/2023/12/09/my-new/">My_first_blog</a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+    
+  </div>
+</aside>
+
+  <!-- 图片放大 Wrap images with fancybox support -->
+  <script src="/js/wrapImage.js"></script>
+</div>
+
+<!-- 文章详情页背景图 -->
+<div id="appBgSwiper" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"
+	:style="{'background-color': bgColor ? bgColor : 'transparent'}">
+	<transition-group tag="ul" :name="names">
+		<li v-for='(image,index) in img' :key='index' v-show="index === mark" class="bg-swiper-box">
+			<img :src="image" class="bg-swiper-img no-lazy">
+		</li>
+	</transition-group>
+</div>
+<script>
+	var vm = new Vue({
+		el: '#appBgSwiper',
+		data: {
+			names: '' || 'fade' || 'fade', // translate-fade fade
+			mark: 0,
+			img: [],
+			bgColor: '',
+			time: null
+		},
+		methods: {   //添加方法
+			change(i, m) {
+				if (i > m) {
+					// this.names = 'fade';
+				} else if (i < m) {
+					// this.names = 'fade';
+				} else {
+					return;
+				}
+				this.mark = i;
+			},
+			prev() {
+				// this.names = 'fade';
+				this.mark--;
+				if (this.mark === -1) {
+					this.mark = 3;
+					return
+				}
+			},
+			next() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			autoPlay() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			play() {
+				let bgImgDelay = '' || '180000'
+				let delay = parseInt(bgImgDelay) || 180000;
+				this.time = setInterval(this.autoPlay, delay);
+			},
+			enter() {
+				clearInterval(this.time);
+			},
+			leave() {
+				this.play();
+			}
+		},
+		created() {
+			this.play()
+		},
+		beforeDestroy() {
+			clearInterval(this.time);
+		},
+		mounted() {
+			let prop = '' || '';
+			let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://')
+			if (isImg) {
+				let img = prop.split(',');
+				let configRoot = '/'
+				let arrImg = [];
+				img.forEach(el => {
+					var Expression = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+					var objExp = new RegExp(Expression);
+
+					if (objExp.test(el)) {
+						// http or https
+						arrImg.push(el);
+					} else {
+						// 非http or https开头
+						// 本地文件
+						let firstStr = el.charAt(0);
+						if (firstStr == '/') {
+							el = el.substr(1); // 删除第一个字符 '/',因为 configRoot最后一个字符为 /
+						}
+						el = configRoot + el;
+						arrImg.push(el);
+					}
+				})
+				this.img = arrImg;
+			} else {
+				this.bgColor = prop;
+			}
+		}
+	})
+</script>
+
+<style>
+	.bg-swiper-box {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.bg-swiper-img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+</style>
+
+
+
+
+  <script>
+  function loadMermaid() {
+    if (document.getElementsByClassName('mermaid').length) {
+      if (window.mermaidJsLoad) mermaid.init()
+      else {
+        loadScript('https://unpkg.com/mermaid/dist/mermaid.min.js').then(() => {
+          window.mermaidJsLoad = true
+          mermaid.initialize({
+            theme: 'default',
+          })
+          if ('true') {
+            mermaid.init();
+          }
+        })
+      }
+    }
+  };
+  document.addEventListener("DOMContentLoaded", function () {
+    loadMermaid();
+  })
+
+  document.addEventListener('pjax:complete', function () {
+    loadMermaid();
+  })
+  
+</script>
+
 
       </main>
     </div>

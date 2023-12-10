@@ -4,17 +4,23 @@
   
     
     <entry>
-      <title>My_first_blog</title>
-      <link href="/2023/12/09/my-new/"/>
-      <url>/2023/12/09/my-new/</url>
+      <title>Hexo重装与迁移</title>
+      <link href="/2023/12/10/Hexo%E8%BF%81%E7%A7%BB/"/>
+      <url>/2023/12/10/Hexo%E8%BF%81%E7%A7%BB/</url>
       
-        <content type="html"><![CDATA[<h1 id="我的第一篇博客"><a href="#我的第一篇博客" class="headerlink" title="我的第一篇博客"></a>我的第一篇博客</h1><p>记录 2023.12.09</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="重装和迁移"><a href="#重装和迁移" class="headerlink" title="重装和迁移"></a>重装和迁移</h1><h2 id="重装"><a href="#重装" class="headerlink" title="重装"></a>重装</h2><p>这个概念跟网上说的，如何在另外一台电脑写博客是一个意思，没有很多繁琐的操作，<strong>只需要把 <code>source</code>、<code>themes</code> 、 <code>_config.yml</code> 覆盖到 <code>blog</code> 的那个文件夹即可</strong> ，只要<code>hexo</code>环境没问题，<code>hexo</code>的一系列操作都没问题（在第一次<code>hexo d</code>可能会有些慢，耐心等待）。<br> 　同样，在新电脑上只要把环境搭建好，只要把两个文件夹一个配置文件覆盖过去，都没问题。<br> 　包括在备份时也只需要把这两个文件夹一个配置文件备份好，其他的都不用管了。</p><h3 id="基础环境搭建"><a href="#基础环境搭建" class="headerlink" title="基础环境搭建"></a>基础环境搭建</h3><h3 id="安装node-js-git"><a href="#安装node-js-git" class="headerlink" title="安装node.js &amp;&amp; git"></a>安装node.js &amp;&amp; git</h3><div class="link-group"><div class="tagLink"><a class="link-card" title="node下载" href="https://nodejs.org/"><span class="link-card-backdrop" style="background-image: url(/imgs/1210/nodejs.png)"></span><div class="left"><img src="/imgs/1210/nodejs.png" class="lazyload placeholder" data-srcset="/imgs/1210/nodejs.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"/></div><div class="right"><p class="text">node下载</p><p class="url">https://nodejs.org/</p></div></a></div> <div class="tagLink"><a class="link-card" title="git下载" href="https://git-scm.com"><span class="link-card-backdrop" style="background-image: url(/imgs/1210/git.png)"></span><div class="left"><img src="/imgs/1210/git.png" class="lazyload placeholder" data-srcset="/imgs/1210/git.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"/></div><div class="right"><p class="text">git下载</p><p class="url">https://git-scm.com</p></div></a></div></div><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">或者</span><br><span class="line">cnpm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"># 输入hexo -v查看版本</span><br></pre></td></tr></table></figure><ul><li>初始化hexo</li></ul><p>执行<code>hexo init</code>（这里用<code>blog</code>文件夹做说明 <code>hexo init &lt;blog&gt;</code> 或者新建一个<code>blog</code>的文件夹然后执行 <code>hexo init</code>），这一步文件夹内会生成一些基本的文件，这些都是<code>hexo</code>自动部署的，跟<code>git init</code> 同一个道理。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init myblog</span><br></pre></td></tr></table></figure><ul><li>然后 执行 <code>npm install hexo-deployer-git --save</code> 安装<code>hexo</code>提供的快速方便的一键部署功能，然后改 <code>_config.yml</code> 中最下面的配置文件：</li></ul><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:guihai27/guihai27.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure><ul><li>启动服务站点</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p>至此，全部安装工作已经完成。</p><p>访问<a href="http://localhost:4000/">http://localhost:4000/</a> 至此hero就搭建好了。可以在本地访问了。<br><img src="/imgs/1210/hexo_s.png" class="lazyload placeholder" data-srcset="/imgs/1210/hexo_s.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p><h3 id="ssh生成"><a href="#ssh生成" class="headerlink" title="ssh生成"></a>ssh生成</h3><p>若本机中已经有<code>ssh</code>，直接添加到<code>github</code>的<code>ssh</code>里面即可，本地没有话，先生成  <code>ssh-keygen -t rsa -C &quot;qq-email@qq.com&quot;</code> （执行期间会让选择放置ssh的目录和ssh密码），用文本编辑器打开ssh.pub文件，拷贝其中的内容，将其添加到 <code>github</code>的 <code>Add SSH Key</code>，添加完成后用 <code>ssh -T git@github.com</code>若提示 <code>Hi *****! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code>，这就说明与<code>github</code>连接成功了。</p><h2 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h2><p>至于说迁移，只要本机的<code>hexo</code>环境没问题，把<code>blog</code>文件夹随便放哪都可以。</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ol><li>换系统或者换电脑需要重装 <code>hexo</code> 的时候，只需要在<code>hexo</code>环境搭建好的基础上，只需要把 <code>source</code>、<code>themes</code> 、 <code>_config.yml</code> 覆盖到新的博客目录下即可。</li><li>只要本机的<code>hexo</code>环境没问题，把<code>blog</code>文件夹随便放哪都可以。</li><li>应该是<code>hexo</code>版本更新了的缘故，<code>hexo d</code>时只能在<code>git bash</code>中执行，其他（window环境）命令行模式都是提示无法获取远程仓库或者没有权限。</li></ol>]]></content>
       
+      
+      <categories>
+          
+          <category> Hexo配置相关 </category>
+          
+      </categories>
       
       
         <tags>
             
-            <tag> 测试博客 </tag>
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -23,17 +29,17 @@
     
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2023/12/09/hello-world/"/>
-      <url>/2023/12/09/hello-world/</url>
+      <title>My_first_blog</title>
+      <link href="/2023/12/09/my-new/"/>
+      <url>/2023/12/09/my-new/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 class="bamboo-h-b" id="我的第一篇博客3ecxgung0a2" style="color:!important">我的第一篇博客</h2><div></div><p>记录 2023.12.09</p>]]></content>
       
       
       
         <tags>
             
-            <tag> Hello World </tag>
+            <tag> 测试博客 </tag>
             
         </tags>
       
