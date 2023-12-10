@@ -178,7 +178,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   color: #fff;
 }
 .bg-floor {
-  background: url("https://pic2.zhimg.com/80/v2-a90e3e9f544549e244355039b96bd606_1440w.jpg");
+  background: ;
   background-size: cover;
   transition: all 0.3s;
 }
@@ -1041,6 +1041,9 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   }
   .header #he-plugin-simple {
     margin-right: 0;
+  }
+  .header .blog-title {
+    margin-left: 150px;
   }
 }
 @media (max-width: 551px) {
