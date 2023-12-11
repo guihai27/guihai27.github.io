@@ -178,7 +178,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   color: #fff;
 }
 .bg-floor {
-  background: ;
+  background: url("/imgs/bizhi/shan.jpg");
   background-size: cover;
   transition: all 0.3s;
 }
